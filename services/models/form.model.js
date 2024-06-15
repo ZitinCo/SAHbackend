@@ -5,7 +5,6 @@ const formSchema = mongoose.Schema({
 'client_country' : {type:String, required:true},
 'client_phone' : {type:String, required:true},
 'domain_link' : {type:String, required:false},
-// 'multiple_queries': {type:String, required:true},
 'web_query': {type:String, required:true},
 'mbapp_query': {type:String, required:true},
 'mrkt_query': {type:String, required:true},
@@ -14,7 +13,6 @@ const formSchema = mongoose.Schema({
 'ecom_query': {type:String, required:true},
 'date' : {type:String, required:true},
 'query_description': {type:String, required:false}
-// 'project_descriptiion': {type:String, required:false}
 },{versionKey:false});
 module.exports = mongoose.model('formModel',formSchema,'form');
 /*
